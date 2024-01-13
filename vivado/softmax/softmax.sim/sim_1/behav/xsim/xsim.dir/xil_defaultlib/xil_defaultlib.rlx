@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v,1703568909,verilog,,,,softmax_tb,,,,,,,,
+/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v,1703567173,verilog,,/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v,,Accumulator2to1;Adder2to1;AdderTree;Arbiter1ton;Arbiternto1;Exponent;Hsk1ton;Hsknto1;Logarithm;PipelineHandshake;PipelineHandshake_1;Queue;Softmax,,,,,,,,
+/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim/glbl.v,1678173336,verilog,,,,glbl,,,,,,,,

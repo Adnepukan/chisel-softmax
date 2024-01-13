@@ -1,0 +1,26 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(AdderTreeTest, org.scalatest.tools.Framework$$anon$1@478dc021, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(SoftmaxTest, org.scalatest.tools.Framework$$anon$1@478dc021, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(LogarithmTest, org.scalatest.tools.Framework$$anon$1@478dc021, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ExponentTest, org.scalatest.tools.Framework$$anon$1@478dc021, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAdderTreeTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAdderTree[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should pass[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mExponentTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mExponent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should pass[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLogarithmTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLogarithm[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should pass[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSoftmaxTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSoftmax[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should pass[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 15 seconds, 763 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 4[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 4, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 4, failed 0, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	ExponentTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	LogarithmTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	SoftmaxTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	AdderTreeTest[0m

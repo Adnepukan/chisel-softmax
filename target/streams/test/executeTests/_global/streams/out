@@ -1,0 +1,95 @@
+[0m[[0m[31merror[0m] [0m[0mjava.lang.ExceptionInInitializerError[0m
+[0m[[0m[31merror[0m] [0m[0m	at SoftmaxTest.$anonfun$new$2(softmax-tester.scala:10)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.Module$.do_apply(Module.scala:53)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.Elaborate.$anonfun$transform$2(Elaborate.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.internal.Builder$.$anonfun$build$1(Builder.scala:721)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.internal.Builder$.build(Builder.scala:716)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.Elaborate.$anonfun$transform$1(Elaborate.scala:33)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.flatMap(List.scala:366)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chisel3.stage.phases.Elaborate.transform(Elaborate.scala:28)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.simulator.Compiler$.$anonfun$elaborate$1(Compiler.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.$anonfun$makeScope$2(Logger.scala:137)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at logger.Logger$.makeScope(Logger.scala:135)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.simulator.Compiler$.elaborate(Compiler.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.internal.BackendExecutive$.start(BackendExecutive.scala:18)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.defaults.package$.createDefaultTester(defaults.scala:21)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.ChiselScalatestTester$TestBuilder.apply(ChiselScalatestTester.scala:31)[0m
+[0m[[0m[31merror[0m] [0m[0m	at SoftmaxTest.$anonfun$new$1(softmax-tester.scala:10)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Transformer.apply(Transformer.scala:22)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Transformer.apply(Transformer.scala:20)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1683)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)[0m
+[0m[[0m[31merror[0m] [0m[0m	at SoftmaxTest.chiseltest$ChiselScalatestTester$$super$withFixture(softmax-tester.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.ChiselScalatestTester.$anonfun$withFixture$1(ChiselScalatestTester.scala:82)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:62)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.ChiselScalatestTester.withFixture(ChiselScalatestTester.scala:82)[0m
+[0m[[0m[31merror[0m] [0m[0m	at chiseltest.ChiselScalatestTester.withFixture$(ChiselScalatestTester.scala:79)[0m
+[0m[[0m[31merror[0m] [0m[0m	at SoftmaxTest.withFixture(softmax-tester.scala:7)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1681)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1693)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1693)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1675)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1685)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1751)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)[0m
+[0m[[0m[31merror[0m] [0m[0m	at scala.collection.immutable.List.foreach(List.scala:431)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1751)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1750)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1685)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Suite.run(Suite.scala:1112)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.Suite.run$(Suite.scala:1094)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1685)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1796)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1796)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1794)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1685)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.tools.Framework.org$scalatest$tools$Framework$$runSuite(Framework.scala:318)[0m
+[0m[[0m[31merror[0m] [0m[0m	at org.scalatest.tools.Framework$ScalaTestTask.execute(Framework.scala:513)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.runTest$1(TestFramework.scala:153)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestRunner.run(TestFramework.scala:168)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.$anonfun$apply$1(TestFramework.scala:336)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$.sbt$TestFramework$$withContextLoader(TestFramework.scala:296)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFramework$$anon$3$$anonfun$$lessinit$greater$1.apply(TestFramework.scala:336)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.TestFunction.apply(TestFramework.scala:348)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Tests$.$anonfun$toTask$1(Tests.scala:436)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$3.$anonfun$apply$2(Transform.scala:47)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.std.Transform$$anon$4.work(Transform.scala:69)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$2(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:24)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.work(Execute.scala:292)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.Execute.$anonfun$submit$1(Execute.scala:283)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sbt.CompletionService$$anon$2.call(CompletionService.scala:65)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.FutureTask.run(FutureTask.java:266)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.lang.Thread.run(Thread.java:748)[0m
+[0m[[0m[31merror[0m] [0m[0mCaused by: firrtl.passes.PassExceptions: [0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[exponent.scala 21:21] : [module Exponent]  Reference hsk is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : hsk.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[adder2to1.scala 27:25] : [module Adder2to1]  Reference hsk is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : hsk.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[addertree.scala 33:21] : [module AdderTree]  Reference hsk is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : hsk.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[logarithm.scala 20:21] : [module Logarithm]  Reference hsk is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : hsk.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassException: 4 errors detected![0m
+[0m[[0m[31merror[0m] [0m[0m(Test / [31mexecuteTests[0m) java.lang.ExceptionInInitializerError[0m

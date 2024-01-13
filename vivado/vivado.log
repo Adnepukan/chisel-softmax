@@ -1,0 +1,775 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Dec 26 12:56:13 2023
+# Process ID: 6761
+# Current directory: /home/adnepukan/parallel.les/homework2/softmax/vivado
+# Command line: vivado
+# Log file: /home/adnepukan/parallel.les/homework2/softmax/vivado/vivado.log
+# Journal file: /home/adnepukan/parallel.les/homework2/softmax/vivado/vivado.jou
+# Running On: adnepukan-deepin, OS: Linux, CPU Frequency: 2500.000 MHz, CPU Physical cores: 12, Host memory: 16454 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /home/adnepukan/vivado/vivado/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+create_project softmax /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/adnepukan/vivado/vivado/Vivado/2022.2/data/ip'.
+add_files -norecurse /home/adnepukan/parallel.les/homework2/softmax/softmax.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Dec 26 12:58:01 2023] Launched synth_1...
+Run output will be captured here: /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Softmax
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/adnepukan/vivado/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 7896.570 ; gain = 364.824 ; free physical = 8152 ; free virtual = 20050
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Softmax' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6663]
+INFO: [Synth 8-6157] synthesizing module 'Exponent' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:122]
+INFO: [Synth 8-6157] synthesizing module 'PipelineHandshake' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PipelineHandshake' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Exponent' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:122]
+INFO: [Synth 8-6157] synthesizing module 'Hsk1ton' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2562]
+INFO: [Synth 8-6155] done synthesizing module 'Hsk1ton' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2562]
+INFO: [Synth 8-6157] synthesizing module 'Arbiternto1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiternto1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2676]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter1ton' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter1ton' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2757]
+INFO: [Synth 8-6157] synthesizing module 'Queue' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2855]
+INFO: [Synth 8-6155] done synthesizing module 'Queue' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2855]
+INFO: [Synth 8-6157] synthesizing module 'Adder2to1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3359]
+INFO: [Synth 8-6155] done synthesizing module 'Adder2to1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3359]
+INFO: [Synth 8-6157] synthesizing module 'AdderTree' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3817]
+INFO: [Synth 8-6157] synthesizing module 'PipelineHandshake_1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3634]
+INFO: [Synth 8-6155] done synthesizing module 'PipelineHandshake_1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3634]
+INFO: [Synth 8-6155] done synthesizing module 'AdderTree' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3817]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator2to1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4158]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator2to1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4158]
+INFO: [Synth 8-6157] synthesizing module 'Logarithm' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4253]
+INFO: [Synth 8-6155] done synthesizing module 'Logarithm' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4253]
+INFO: [Synth 8-6157] synthesizing module 'Hsknto1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6552]
+INFO: [Synth 8-6155] done synthesizing module 'Hsknto1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6552]
+INFO: [Synth 8-6155] done synthesizing module 'Softmax' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6663]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_0_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_0_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_1_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_1_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_2_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_2_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_3_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_3_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_4_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_4_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_5_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_5_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_6_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_6_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_7_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_7_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_8_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_8_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_9_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_9_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_10_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_10_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_11_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_11_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_12_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_12_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_13_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_13_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_14_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_14_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_15_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_15_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_last_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_last_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port reset in module Softmax is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 8075.477 ; gain = 543.730 ; free physical = 8156 ; free virtual = 20052
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 8093.289 ; gain = 561.543 ; free physical = 8156 ; free virtual = 20051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 8093.289 ; gain = 561.543 ; free physical = 8156 ; free virtual = 20051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 8093.289 ; gain = 0.000 ; free physical = 8140 ; free virtual = 20036
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 8244.039 ; gain = 0.000 ; free physical = 8057 ; free virtual = 19953
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:16 . Memory (MB): peak = 8381.145 ; gain = 849.398 ; free physical = 7904 ; free virtual = 19807
+30 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:18 . Memory (MB): peak = 8381.145 ; gain = 1035.277 ; free physical = 7904 ; free virtual = 19807
+export_ip_user_files -of_objects  [get_files /home/adnepukan/parallel.les/homework2/softmax/softmax.v] -no_script -reset -force -quiet
+remove_files  /home/adnepukan/parallel.les/homework2/softmax/softmax.v
+add_files -norecurse /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/adnepukan/vivado/vivado/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'softmax_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineHandshake
+INFO: [VRFC 10-311] analyzing module Exponent
+INFO: [VRFC 10-311] analyzing module Hsk1ton
+INFO: [VRFC 10-311] analyzing module Arbiternto1
+INFO: [VRFC 10-311] analyzing module Arbiter1ton
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-311] analyzing module Adder2to1
+INFO: [VRFC 10-311] analyzing module PipelineHandshake_1
+INFO: [VRFC 10-311] analyzing module AdderTree
+INFO: [VRFC 10-311] analyzing module Accumulator2to1
+INFO: [VRFC 10-311] analyzing module Logarithm
+INFO: [VRFC 10-311] analyzing module Hsknto1
+INFO: [VRFC 10-311] analyzing module Softmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_tb
+ERROR: [VRFC 10-2989] 'io_input_last' is not declared [/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v:64]
+ERROR: [VRFC 10-2989] 'io_input_last' is not declared [/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v:88]
+ERROR: [VRFC 10-2989] 'io_input_last' is not declared [/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v:91]
+ERROR: [VRFC 10-8530] module 'softmax_tb' is ignored due to previous errors [/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/adnepukan/vivado/vivado/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'softmax_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineHandshake
+INFO: [VRFC 10-311] analyzing module Exponent
+INFO: [VRFC 10-311] analyzing module Hsk1ton
+INFO: [VRFC 10-311] analyzing module Arbiternto1
+INFO: [VRFC 10-311] analyzing module Arbiter1ton
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-311] analyzing module Adder2to1
+INFO: [VRFC 10-311] analyzing module PipelineHandshake_1
+INFO: [VRFC 10-311] analyzing module AdderTree
+INFO: [VRFC 10-311] analyzing module Accumulator2to1
+INFO: [VRFC 10-311] analyzing module Logarithm
+INFO: [VRFC 10-311] analyzing module Hsknto1
+INFO: [VRFC 10-311] analyzing module Softmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_tb
+ERROR: [VRFC 10-2989] 'io_input_last' is not declared [/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v:64]
+ERROR: [VRFC 10-8530] module 'softmax_tb' is ignored due to previous errors [/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v:3]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/adnepukan/vivado/vivado/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'softmax_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineHandshake
+INFO: [VRFC 10-311] analyzing module Exponent
+INFO: [VRFC 10-311] analyzing module Hsk1ton
+INFO: [VRFC 10-311] analyzing module Arbiternto1
+INFO: [VRFC 10-311] analyzing module Arbiter1ton
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-311] analyzing module Adder2to1
+INFO: [VRFC 10-311] analyzing module PipelineHandshake_1
+INFO: [VRFC 10-311] analyzing module AdderTree
+INFO: [VRFC 10-311] analyzing module Accumulator2to1
+INFO: [VRFC 10-311] analyzing module Logarithm
+INFO: [VRFC 10-311] analyzing module Hsknto1
+INFO: [VRFC 10-311] analyzing module Softmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6663. Module Softmax doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 122. Module Exponent doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 1. Module PipelineHandshake doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2562. Module Hsk1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2676. Module Arbiternto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2757. Module Arbiter1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2855. Module Queue doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3359. Module Adder2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3817. Module AdderTree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4158. Module Accumulator2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4253. Module Logarithm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6552. Module Hsknto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6663. Module Softmax doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 122. Module Exponent doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 1. Module PipelineHandshake doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2562. Module Hsk1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2676. Module Arbiternto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2757. Module Arbiter1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2855. Module Queue doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3359. Module Adder2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3817. Module AdderTree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4158. Module Accumulator2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4253. Module Logarithm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6552. Module Hsknto1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PipelineHandshake
+Compiling module xil_defaultlib.Exponent
+Compiling module xil_defaultlib.Hsk1ton
+Compiling module xil_defaultlib.Arbiternto1
+Compiling module xil_defaultlib.Arbiter1ton
+Compiling module xil_defaultlib.Queue
+Compiling module xil_defaultlib.Adder2to1
+Compiling module xil_defaultlib.PipelineHandshake_1
+Compiling module xil_defaultlib.AdderTree
+Compiling module xil_defaultlib.Accumulator2to1
+Compiling module xil_defaultlib.Logarithm
+Compiling module xil_defaultlib.Hsknto1
+Compiling module xil_defaultlib.Softmax
+Compiling module xil_defaultlib.softmax_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot softmax_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "softmax_tb_behav -key {Behavioral:sim_1:Functional:softmax_tb} -tclbatch {softmax_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source softmax_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'softmax_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:25 ; elapsed = 00:00:08 . Memory (MB): peak = 8437.344 ; gain = 22.176 ; free physical = 1150 ; free virtual = 16746
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/adnepukan/vivado/vivado/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'softmax_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineHandshake
+INFO: [VRFC 10-311] analyzing module Exponent
+INFO: [VRFC 10-311] analyzing module Hsk1ton
+INFO: [VRFC 10-311] analyzing module Arbiternto1
+INFO: [VRFC 10-311] analyzing module Arbiter1ton
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-311] analyzing module Adder2to1
+INFO: [VRFC 10-311] analyzing module PipelineHandshake_1
+INFO: [VRFC 10-311] analyzing module AdderTree
+INFO: [VRFC 10-311] analyzing module Accumulator2to1
+INFO: [VRFC 10-311] analyzing module Logarithm
+INFO: [VRFC 10-311] analyzing module Hsknto1
+INFO: [VRFC 10-311] analyzing module Softmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6663. Module Softmax doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 122. Module Exponent doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 1. Module PipelineHandshake doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2562. Module Hsk1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2676. Module Arbiternto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2757. Module Arbiter1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2855. Module Queue doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3359. Module Adder2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3817. Module AdderTree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4158. Module Accumulator2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4253. Module Logarithm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6552. Module Hsknto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6663. Module Softmax doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 122. Module Exponent doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 1. Module PipelineHandshake doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2562. Module Hsk1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2676. Module Arbiternto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2757. Module Arbiter1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2855. Module Queue doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3359. Module Adder2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3817. Module AdderTree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4158. Module Accumulator2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4253. Module Logarithm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6552. Module Hsknto1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PipelineHandshake
+Compiling module xil_defaultlib.Exponent
+Compiling module xil_defaultlib.Hsk1ton
+Compiling module xil_defaultlib.Arbiternto1
+Compiling module xil_defaultlib.Arbiter1ton
+Compiling module xil_defaultlib.Queue
+Compiling module xil_defaultlib.Adder2to1
+Compiling module xil_defaultlib.PipelineHandshake_1
+Compiling module xil_defaultlib.AdderTree
+Compiling module xil_defaultlib.Accumulator2to1
+Compiling module xil_defaultlib.Logarithm
+Compiling module xil_defaultlib.Hsknto1
+Compiling module xil_defaultlib.Softmax
+Compiling module xil_defaultlib.softmax_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot softmax_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "softmax_tb_behav -key {Behavioral:sim_1:Functional:softmax_tb} -tclbatch {softmax_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source softmax_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'softmax_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:22 ; elapsed = 00:00:07 . Memory (MB): peak = 8501.383 ; gain = 0.000 ; free physical = 1127 ; free virtual = 16731
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from '/home/adnepukan/vivado/vivado/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'softmax_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PipelineHandshake
+INFO: [VRFC 10-311] analyzing module Exponent
+INFO: [VRFC 10-311] analyzing module Hsk1ton
+INFO: [VRFC 10-311] analyzing module Arbiternto1
+INFO: [VRFC 10-311] analyzing module Arbiter1ton
+INFO: [VRFC 10-311] analyzing module Queue
+INFO: [VRFC 10-311] analyzing module Adder2to1
+INFO: [VRFC 10-311] analyzing module PipelineHandshake_1
+INFO: [VRFC 10-311] analyzing module AdderTree
+INFO: [VRFC 10-311] analyzing module Accumulator2to1
+INFO: [VRFC 10-311] analyzing module Logarithm
+INFO: [VRFC 10-311] analyzing module Hsknto1
+INFO: [VRFC 10-311] analyzing module Softmax
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module softmax_tb
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6663. Module Softmax doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 122. Module Exponent doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 1. Module PipelineHandshake doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2562. Module Hsk1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2676. Module Arbiternto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2757. Module Arbiter1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2855. Module Queue doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3359. Module Adder2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3817. Module AdderTree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4158. Module Accumulator2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4253. Module Logarithm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6552. Module Hsknto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6663. Module Softmax doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 122. Module Exponent doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 1. Module PipelineHandshake doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2562. Module Hsk1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2676. Module Arbiternto1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2757. Module Arbiter1ton doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 2855. Module Queue doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3359. Module Adder2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3817. Module AdderTree doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4158. Module Accumulator2to1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 4253. Module Logarithm doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 3634. Module PipelineHandshake_1 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v" Line 6552. Module Hsknto1 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.PipelineHandshake
+Compiling module xil_defaultlib.Exponent
+Compiling module xil_defaultlib.Hsk1ton
+Compiling module xil_defaultlib.Arbiternto1
+Compiling module xil_defaultlib.Arbiter1ton
+Compiling module xil_defaultlib.Queue
+Compiling module xil_defaultlib.Adder2to1
+Compiling module xil_defaultlib.PipelineHandshake_1
+Compiling module xil_defaultlib.AdderTree
+Compiling module xil_defaultlib.Accumulator2to1
+Compiling module xil_defaultlib.Logarithm
+Compiling module xil_defaultlib.Hsknto1
+Compiling module xil_defaultlib.Softmax
+Compiling module xil_defaultlib.softmax_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot softmax_tb_behav
+execute_script: Time (s): cpu = 00:00:20 ; elapsed = 00:00:05 . Memory (MB): peak = 8502.367 ; gain = 0.000 ; free physical = 1020 ; free virtual = 16609
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:05 . Memory (MB): peak = 8502.367 ; gain = 0.000 ; free physical = 1020 ; free virtual = 16609
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:22 ; elapsed = 00:00:08 . Memory (MB): peak = 8502.367 ; gain = 0.000 ; free physical = 1009 ; free virtual = 16604
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj softmax_tb_vlog.prj
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'softmax_tb'
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /home/adnepukan/vivado/vivado/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot softmax_tb_behav xil_defaultlib.softmax_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    C_INCLUDE_PATH
+    LIBRARY_PATH
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Time resolution is 1 ps
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 23:52:13 2023...

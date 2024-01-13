@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/main/scala/softmax.scala:82:18: overloaded method value combine with alternatives:[0m
+[0m[[0m[31merror[0m] [0m[0m  (src: chisel3.Vec[VecFixed],dst: VecFixed,i: Int)Unit <and>[0m
+[0m[[0m[31merror[0m] [0m[0m  (src: chisel3.util.DecoupledIO[chisel3.Vec[VecFixed]],dst: chisel3.util.DecoupledIO[VecFixed],i: Int)Unit[0m
+[0m[[0m[31merror[0m] [0m[0m cannot be applied to (chisel3.util.DecoupledIO[chisel3.Vec[VecFixed]], VecFixed, Int)[0m
+[0m[[0m[31merror[0m] [0m[0m        VecFixed.combine(queueOutHsk.io.output, adder.io.input.bits, 0)[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

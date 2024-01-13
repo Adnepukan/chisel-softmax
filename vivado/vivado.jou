@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Dec 26 12:56:13 2023
+# Process ID: 6761
+# Current directory: /home/adnepukan/parallel.les/homework2/softmax/vivado
+# Command line: vivado
+# Log file: /home/adnepukan/parallel.les/homework2/softmax/vivado/vivado.log
+# Journal file: /home/adnepukan/parallel.les/homework2/softmax/vivado/vivado.jou
+# Running On: adnepukan-deepin, OS: Linux, CPU Frequency: 2500.000 MHz, CPU Physical cores: 12, Host memory: 16454 MB
+#-----------------------------------------------------------
+start_gui
+create_project softmax /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax -part xc7a35tcpg236-1
+add_files -norecurse /home/adnepukan/parallel.les/homework2/softmax/softmax.v
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+export_ip_user_files -of_objects  [get_files /home/adnepukan/parallel.les/homework2/softmax/softmax.v] -no_script -reset -force -quiet
+remove_files  /home/adnepukan/parallel.les/homework2/softmax/softmax.v
+add_files -norecurse /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax-tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+close_design
+launch_simulation
+launch_simulation
+source softmax_tb.tcl
+close_sim
+launch_simulation
+source softmax_tb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim

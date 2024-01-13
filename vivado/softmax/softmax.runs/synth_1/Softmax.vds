@@ -1,0 +1,456 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Dec 26 12:58:03 2023
+# Process ID: 7400
+# Current directory: /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.runs/synth_1
+# Command line: vivado -log Softmax.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Softmax.tcl
+# Log file: /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.runs/synth_1/Softmax.vds
+# Journal file: /home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.runs/synth_1/vivado.jou
+# Running On: adnepukan-deepin, OS: Linux, CPU Frequency: 2500.000 MHz, CPU Physical cores: 12, Host memory: 16454 MB
+#-----------------------------------------------------------
+source Softmax.tcl -notrace
+Command: synth_design -top Softmax -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7432
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/adnepukan/vivado/vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2407.191 ; gain = 382.707 ; free physical = 7315 ; free virtual = 19160
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1842.030; parent = 1636.753; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3378.285; parent = 2414.133; children = 964.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Softmax' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6663]
+INFO: [Synth 8-6157] synthesizing module 'Exponent' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:122]
+INFO: [Synth 8-6157] synthesizing module 'PipelineHandshake' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'PipelineHandshake' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Exponent' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:122]
+INFO: [Synth 8-6157] synthesizing module 'Hsk1ton' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2562]
+INFO: [Synth 8-6155] done synthesizing module 'Hsk1ton' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2562]
+INFO: [Synth 8-6157] synthesizing module 'Arbiternto1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiternto1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2676]
+INFO: [Synth 8-6157] synthesizing module 'Arbiter1ton' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2757]
+INFO: [Synth 8-6155] done synthesizing module 'Arbiter1ton' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2757]
+INFO: [Synth 8-6157] synthesizing module 'Queue' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2855]
+INFO: [Synth 8-6155] done synthesizing module 'Queue' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:2855]
+INFO: [Synth 8-6157] synthesizing module 'Adder2to1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3359]
+INFO: [Synth 8-6155] done synthesizing module 'Adder2to1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3359]
+INFO: [Synth 8-6157] synthesizing module 'AdderTree' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3817]
+INFO: [Synth 8-6157] synthesizing module 'PipelineHandshake_1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3634]
+INFO: [Synth 8-6155] done synthesizing module 'PipelineHandshake_1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3634]
+INFO: [Synth 8-6155] done synthesizing module 'AdderTree' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:3817]
+INFO: [Synth 8-6157] synthesizing module 'Accumulator2to1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4158]
+INFO: [Synth 8-6155] done synthesizing module 'Accumulator2to1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4158]
+INFO: [Synth 8-6157] synthesizing module 'Logarithm' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4253]
+INFO: [Synth 8-6155] done synthesizing module 'Logarithm' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4253]
+INFO: [Synth 8-6157] synthesizing module 'Hsknto1' [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6552]
+INFO: [Synth 8-6155] done synthesizing module 'Hsknto1' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6552]
+INFO: [Synth 8-6155] done synthesizing module 'Softmax' (0#1) [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6663]
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_0_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_0_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_1_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_1_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_2_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_2_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_3_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_3_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_4_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_4_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_5_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_5_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_6_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_6_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_7_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_7_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_8_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_8_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_9_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_9_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_10_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_10_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_11_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_11_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_12_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_12_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_13_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_13_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_14_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_14_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_in_15_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_in_15_reg" dissolved into registers
+WARNING: [Synth 8-4767] Trying to implement RAM 'ram_last_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: Write port has constant address. 
+	2: No valid read/write found for RAM. 
+	2: Only 1 word in RAM 
+RAM "ram_last_reg" dissolved into registers
+WARNING: [Synth 8-7129] Port reset in module Softmax is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2594.098 ; gain = 569.613 ; free physical = 7302 ; free virtual = 19152
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2006.925; parent = 1801.647; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3558.254; parent = 2594.102; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2611.910 ; gain = 587.426 ; free physical = 7322 ; free virtual = 19172
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2006.925; parent = 1801.647; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3576.066; parent = 2611.914; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2619.914 ; gain = 595.430 ; free physical = 7322 ; free virtual = 19172
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2006.925; parent = 1801.647; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3584.070; parent = 2619.918; children = 964.152
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'data2In_0_reg' and it is trimmed from '12' to '11' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4398]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1In_0_reg' and it is trimmed from '12' to '11' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:4335]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data4_0_reg' and it is trimmed from '10' to '8' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6397]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data3In2_0_reg' and it is trimmed from '10' to '8' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:6380]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 7023 ; free virtual = 18897
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2111.328; parent = 1906.082; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 16    
++---XORs : 
+	   3 Input     12 Bit         XORs := 14    
++---Registers : 
+	               13 Bit    Registers := 32    
+	               12 Bit    Registers := 15    
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 48    
+	                1 Bit    Registers := 40    
++---ROMs : 
+	                    ROMs := 16    
++---Muxes : 
+	   2 Input   11 Bit        Muxes := 11    
+	   2 Input    8 Bit        Muxes := 16    
+	1982 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_15_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:255]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_14_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:254]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_13_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:253]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_12_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:252]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_11_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:251]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_10_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:250]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_9_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:249]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_8_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:248]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_7_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:247]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_6_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:246]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_5_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:245]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_4_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:244]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_3_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:243]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_2_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:242]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_1_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:241]
+WARNING: [Synth 8-3936] Found unconnected internal register 'data1_0_reg_rep' and it is trimmed from '13' to '7' bits. [/home/adnepukan/parallel.les/homework2/softmax/softmax.v:240]
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_15_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_14_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_13_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_12_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_11_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_10_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_9_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_8_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_7_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_6_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_5_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_4_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_3_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_2_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_1_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-3936] Found unconnected internal register 'queue/ram_in_0_reg' and it is trimmed from '8' to '6' bits.
+WARNING: [Synth 8-7129] Port io_input_bits_last in module Logarithm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module Softmax is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6982 ; free virtual = 18863
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2139.117; parent = 1933.871; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|Exponent    | data1_0_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_1_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_2_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_3_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_4_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_5_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_6_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_7_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_8_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_9_reg_rep  | 128x8         | Block RAM      | 
+|Exponent    | data1_10_reg_rep | 128x8         | Block RAM      | 
+|Exponent    | data1_11_reg_rep | 128x8         | Block RAM      | 
+|Exponent    | data1_12_reg_rep | 128x8         | Block RAM      | 
+|Exponent    | data1_13_reg_rep | 128x8         | Block RAM      | 
+|Exponent    | data1_14_reg_rep | 128x8         | Block RAM      | 
+|Exponent    | data1_15_reg_rep | 128x8         | Block RAM      | 
++------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6982 ; free virtual = 18863
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2139.996; parent = 1934.750; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_0_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_0_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_2_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_2_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_4_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_4_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_6_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_6_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_8_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_8_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_10_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_10_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_12_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_12_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_14_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance exponentArray/data1_14_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6980 ; free virtual = 18862
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.355; parent = 1936.109; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.688; parent = 1936.441; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.688; parent = 1936.441; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.863; parent = 1936.617; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.930; parent = 1936.684; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.930; parent = 1936.684; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.930; parent = 1936.684; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    89|
+|3     |LUT2     |   156|
+|4     |LUT3     |   220|
+|5     |LUT4     |    61|
+|6     |LUT5     |   344|
+|7     |LUT6     |   212|
+|8     |MUXF7    |     3|
+|9     |MUXF8    |     1|
+|10    |RAMB18E1 |     8|
+|11    |FDCE     |    33|
+|12    |FDRE     |   653|
+|13    |IBUF     |   133|
+|14    |OBUF     |   131|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+----------------------+------+
+|      |Instance        |Module                |Cells |
++------+----------------+----------------------+------+
+|1     |top             |                      |  2045|
+|2     |  accumulator   |Accumulator2to1       |    38|
+|3     |  adder         |Adder2to1             |   567|
+|4     |  adderTree     |AdderTree             |   261|
+|5     |    hsk         |PipelineHandshake_1_0 |    11|
+|6     |  exponentArray |Exponent              |   635|
+|7     |    hsk         |PipelineHandshake     |    15|
+|8     |  logarithm     |Logarithm             |   178|
+|9     |    hsk         |PipelineHandshake_1   |    13|
+|10    |  queue         |Queue                 |    99|
++------+----------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6977 ; free virtual = 18858
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2141.930; parent = 1936.684; children = 205.277
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4346.148; parent = 3381.996; children = 964.152
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3381.992 ; gain = 1357.508 ; free physical = 6980 ; free virtual = 18861
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3382.000 ; gain = 1357.508 ; free physical = 6980 ; free virtual = 18861
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3382.000 ; gain = 0.000 ; free physical = 7076 ; free virtual = 18959
+INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3430.016 ; gain = 0.000 ; free physical = 6995 ; free virtual = 18891
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 575ede23
+INFO: [Common 17-83] Releasing license: Synthesis
+55 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:24 . Memory (MB): peak = 3430.016 ; gain = 1429.344 ; free physical = 7232 ; free virtual = 19128
+INFO: [Common 17-1381] The checkpoint '/home/adnepukan/parallel.les/homework2/softmax/vivado/softmax/softmax.runs/synth_1/Softmax.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Softmax_utilization_synth.rpt -pb Softmax_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 12:58:34 2023...

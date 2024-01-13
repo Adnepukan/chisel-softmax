@@ -1,0 +1,20 @@
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassExceptions: [0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 48:31] : [module Softmax]  Reference adderTree is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : adderTree.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 47:27] : [module Softmax]  Reference adder is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : adder.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 50:31] : [module Softmax]  Reference logarithm is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : logarithm.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 42:35] : [module Softmax]  Reference exponentArray is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : exponentArray.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassException: 4 errors detected![0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mrun[0m) firrtl.passes.PassExceptions: [0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 48:31] : [module Softmax]  Reference adderTree is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : adderTree.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 47:27] : [module Softmax]  Reference adder is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : adder.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 50:31] : [module Softmax]  Reference logarithm is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : logarithm.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.CheckInitialization$RefNotInitializedException:  @[softmax.scala 42:35] : [module Softmax]  Reference exponentArray is not fully initialized.[0m
+[0m[[0m[31merror[0m] [0m[0m   : exponentArray.rst <= VOID[0m
+[0m[[0m[31merror[0m] [0m[0mfirrtl.passes.PassException: 4 errors detected![0m

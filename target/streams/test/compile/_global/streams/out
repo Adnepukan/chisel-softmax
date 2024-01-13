@@ -1,0 +1,43 @@
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:1:8: not found: object chisel4[0m
+[0m[[0m[31merror[0m] [0m[0mimport chisel4._[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:13:47: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.ready.poke(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:14:46: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.input.valid.poke(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:15:47: value F is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.input.bits.x(0).poke(1.F(8.W, 4.BP))[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:15:51: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.input.bits.x(0).poke(1.F(8.W, 4.BP))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:15:56: value BP is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.input.bits.x(0).poke(1.F(8.W, 4.BP))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:16:51: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.input.bits.last.poke(false.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:18:47: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.ready.poke(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:19:58: value F is not a member of Double[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.bits.x(0).expect(0.3671875.F(16.W, 8.BP))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:19:63: value W is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.bits.x(0).expect(0.3671875.F(16.W, 8.BP))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:19:68: value BP is not a member of Int[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.bits.x(0).expect(0.3671875.F(16.W, 8.BP))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                   ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:20:49: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.valid.expect(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:21:48: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.input.ready.expect(true.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/adnepukan/parallel.les/homework2/softmax/src/test/scala/exponent-tester.scala:22:54: value B is not a member of Boolean[0m
+[0m[[0m[31merror[0m] [0m[0m                dut.io.output.bits.last.expect(false.B)[0m
+[0m[[0m[31merror[0m] [0m[0m                                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m14 errors found[0m
